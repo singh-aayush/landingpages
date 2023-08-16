@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik&family=Sniglet&display=swap');
+
+:root{
+    --singlefont: "Sniglet", cursive;
+    --rubik: "Rubik", cursive;
+    --Lobster:"Lobster", cursive;
+    --patua:"Patua One", cursive;
+    --acme:"Acme", cursive;
+    --bggradient: linear-gradient(to bottom, #35A29F,#0B666A);
+    --light-gray: rgb(255,255,255,0.800);
+}
+
+/* body{
+   background: var(--bggradient);
+} */
+
+*{
+    box-sizing: border-box;
+}
+
+/* HEADER START */
+
+header,section{
+    overflow-x: hidden;
+}
+
+header a{
+    font-family: var(--singlefont);
+    font-size: 0.9rem;
+    /* font-weight: bolder; */
+    color: whitesmoke;
+}
+
+header{
+    background: #0B666A;
+    background: var(--bggradient);
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #90edea;
+    min-width: 150px;
+    box-shadow: 10px 50px 40px 30px solid black;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+}
+
+header .nav-item:first-child{
+    padding-left: 2em;
+}
+
+header .nav-item{
+    padding: 0.9em;
+}
+
+header .navbar-brand{
+    padding-left: 8em;
+}
+
+header .nav-link:hover{
+    color: whitesmoke;
+}
+
+header .row .col-md-7{
+    padding: 27vmin 1vmin;
+    padding-bottom: 37vmin;
+    font-family: var(--rubik);
+    color: white;
+}
+
+header .row .col-md-5 img{
+    width: 90%;
+    margin-top: 30%;
+    border-radius: 17px;
+    box-shadow: 10px 20px 40px 5px rgb(0, 0, 0);
+}
+
+header .row .col-md-7 h1{
+    font-size: 8vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p{
+    padding: 1vmin 5vmin;
+}
+
+header .container .col-md-7 button{
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+/* SECTION START */
+
+.section-1{
+    padding: 20vmin 0;
+}
+
+.section-1 .row .col-md-6 .play img{
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 0.5em;
+    
+}
+
+.section-1 .row .col-md-6:last-child{
+    position: relative;
+}
+
+.section-1 .row .col-md-6 .panel{
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+background: rgb(248, 237, 237);
+border-radius: 7px;
+text-align: left;
+padding: 6vmin 9vmin 6vmin 9vmin;
+box-shadow: 0px 25px 10px rgba(0,0,0,0.2em);
+font-family: var(--rubik);
+z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1{
+    font-weight: bold;
+    font-size: 2em;
+    padding: 0.4em 0;
+}
+
+.section-1 .row .col-md-6 .panel p{
+    font-size: 0.9em;
+    color: rgb(0, 0, 0);
+}
+
+.cover{
+    width: 100%;
+    height: 55vmin;
+    background: white;
+    background-position: -24rem -19rem;
+    background-position: 150%;
+    position: relative;
+}
+
+.cover .content{
+    background: rgb(99, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    padding-top: 19vmin;
+}
+
+.cover .content>h1{
+    font-family: var(--patua);
+    font-size: 6vmin;
+    color: whitesmoke;
+}
+
+.number .client{
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 5.5vmin;
+    margin: 1rem;
+    border-radius: .5em;
+    box-shadow: inset -10px -10px 23px 10px  rgba(255, 0, 0, 0.3);
+}
+
+.number{
+    margin-top: -15vmin;
+    transition: all 0.7s linear;
+}
+
+.number .client h1{
+    font-size: 3.5rem;
+    color: royalblue;
+}
+
+.number .client p{
+    font-family: var(--patua);
+}
+
+.purchase>h1{
+    padding-top: 15vmin;
+    padding-bottom: 0.1em;
+    font-family: var(--Lobster);
+}
+
+.purchase>p{
+    color: rgb(80, 47, 47);
+    font-size: 3vmin;
+    padding-bottom: 10vmin;
+}
+
+.purchase .cards .card{
+    width: 22rem;
+    margin: 3vmin;
+}
+
+.cards div{
+    padding: 0;
+    margin: 0;
+}
+
+.cards .title{
+    background: rgba(84, 255, 247, 0.149);
+    padding: 1.4rem 2.5rem;
+    font-size: 2vmin;
+}
+
+.card .card-text{
+    padding: 2.5rem 3rem;
+    color: var(--light-black);
+}
+
+.card-body .pricing{
+    background: rgba(191, 241, 241, 0.146);
+    border-top-right-radius: 170px;
+    border-top-left-radius: 170px;
+}
+
+.card-body .pricing>h1{
+    font-size: 7vmin;
+    padding: 1em 0.5em;
+}
+
+/* SECTION THIRD */
+
+.section-3 .container h1{
+    font-size: 6vmin;
+    padding-top: 14vmin;
+}
+
+.section-3 .card{
+    width: 22rem;
+margin-top: 10vmin;
+}
+
+.section-3 .row{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10vmin;
+}
+
+.section-3 .card .review{
+    height: 22rem;
+    padding: 5vmin 4vmin 4vmin 4vmin;
+    background: rgb(107, 131, 120);
+}
+
+.section-3 .card .review>h1{
+    font-family: var(--singlefont);
+}
+
+.section-3 .card .review>p{
+    padding: 1vmin 0;
+    margin-top: 0 2vmin;
+    font-family: var(--Lobster);
+}
+
+.section-3 .card .review>h3{
+    margin-top: 4vmin;
+    font-size: 1.5em;
+}
+
+.section-3 .card .review a{
+    color: blue;
+}
+
+.section-3 .card .review>a:hover{
+    color: black;
+    cursor: pointer;
+}
+
+/* FOOTER SECTION */
+
+footer{
+    background: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+}
+
+footer p>span{
+    color: #ff512f;
+}
+
+footer input{
+    border: none !important;
+}
+
+footer .input::placeholder{
+    color: white !important;
+}
+
+footer .row .link-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .row .link-section .link-title{
+    font-family: var(--rubik);
+    color: var(--light-gray);
+}
+
+footer .input-group .input-group-text{
+    background: var(--bggradient);
+    border: none;
+    cursor: pointer;
+}
+
+footer .input-group .sendbtn{
+    margin-left: 10px;
+    padding: 4px;
+    width: 49px;
+    color: #ff512f;
+    font-family: var(--rubik);
+    border-radius: 7px;
+    font-weight: bold;
+}
